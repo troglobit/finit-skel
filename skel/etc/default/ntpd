@@ -1,0 +1,1 @@
+#NTPD_ARGS="-p pool.ntp.org"
