@@ -3,5 +3,7 @@
 all:
 
 install:
-	rm -rf        $(DESTDIR)/etc/finit.d
-	cp -a  skel/* $(DESTDIR)/
+	rm -rf $(DESTDIR)/etc/finit.d
+	(cd skel/ && tar --exclude='*~' --exclude='*/.empty' -cf - .) \
+		| (cd $(DESTDIR)/ && tar -xvf -)
+
