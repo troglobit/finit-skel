@@ -1,1 +1,1 @@
-#NTPD_ARGS="-p pool.ntp.org"
+NTPD_ARGS="-l -p pool.ntp.org"
