@@ -1,1 +1,4 @@
-NTPD_ARGS="-l -p pool.ntp.org"
+# -l        : listen also to incoming reqeusts (server)
+# -I IFACE  : bind to interface (listen-only)
+# -p SERVER : Can also be read from /etc/ntp.conf (server ...)
+NTPD_ARGS="-p pool.ntp.org"
