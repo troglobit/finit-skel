@@ -1,1 +1,1 @@
-UDHCPD_ARGS="-S -P 67"
+#UDHCPD_ARGS="-P 67"
